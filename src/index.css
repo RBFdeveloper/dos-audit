@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+
+:root, [data-theme="dark"] {
+  --bg-base:      #060f1e;
+  --bg-surface:   #0a1628;
+  --bg-card:      #0d1f3c;
+  --bg-hover:     #1e3a5f;
+  --border:       #1e3a5f;
+  --border-light: #2a4a73;
+  --text-primary:   #ffffff;
+  --text-secondary: #94a3b8;
+  --text-muted:     #64748b;
+  --text-faint:     #3a536b;
+  --accent:       #4ade80;
+  --accent-hover: #22c55e;
+  --accent-dark:  #060f1e;
+
+  --tooltip-bg:   #0a1628;
+  --tooltip-text: #ffffff;
+  --tooltip-border: #1e3a5f;
+
+  --input-bg: #060f1e;
+  --select-bg: #060f1e;
+}
+
+[data-theme="light"] {
+  --bg-base:      #f0f4f8;
+  --bg-surface:   #e8eef5;
+  --bg-card:      #ffffff;
+  --bg-hover:     #dde6f0;
+  --border:       #c8d8e8;
+  --border-light: #b0c4d8;
+  --text-primary:   #0d1f3c;
+  --text-secondary: #3a5272;
+  --text-muted:     #5a7a99;
+  --text-faint:     #8aa8c4;
+  --accent:       #16a34a;
+  --accent-hover: #15803d;
+  --accent-dark:  #ffffff;
+
+  --tooltip-bg:   #ffffff;
+  --tooltip-text: #0d1f3c;
+  --tooltip-border: #c8d8e8;
+
+  --input-bg: #f8fafc;
+  --select-bg: #f8fafc;
+}
+
+html, body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-surface); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--border-light); }
